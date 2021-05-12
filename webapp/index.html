@@ -6,7 +6,7 @@
 	<script id="sap-ui-bootstrap"
 		src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
 		data-sap-ui-theme="sap_belize"
-		data-sap-ui-libs="sap.m"
+		data-sap-ui-libs="sap.m, sap.ui.layout, sap.tnt"
 		data-sap-ui-resourceroots='{"Quickstart": "./"}'
 		data-sap-ui-onInit="module:Quickstart/index"
 		data-sap-ui-compatVersion="edge"
@@ -15,3 +15,14 @@
 </head>
 <body class="sapUiBody" id="content"></body>
 </html>
+
+<!-- With the script tag, we load and initialize SAPUI5 with typical bootstrap parameters. 
+    We define, for example, a theme, control libraries, as well as performance and compatibility flags.  -->
+
+<!-- resourceroots defines the namespace for all resources of the app. 
+    This way, we can easily reference additional files  -->
+
+<!-- The index module that we load with the onInit parameter will hold the application logic -->
+
+<!-- The body tag is defined with the sapUiBody class and the content ID. 
+    This is where we will add the content of the app in the next steps. -->
