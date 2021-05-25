@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "**/.gitignore": true,
+    "**/.git": true,
+    "**/.vscode": true
+},
+"yaml.customTags": [],
+"ApplicationWizard.TargetFolder": "/home/user/projects/openSAPHANA",
+"actions": []
+}

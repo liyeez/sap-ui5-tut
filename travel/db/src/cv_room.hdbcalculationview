@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="cv_room" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="cv_room"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="room">
+    <resourceUri>room</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+
+<logicalModel id="room">
+  <attributes>
+    <attribute id="type" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="type"/>
+      <keyMapping columnObjectName="room" columnName="type"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="price" order="2" aggregationType="avg" measureType="simple">
+      <descriptions defaultDescription="price"/>
+      <measureMapping columnObjectName="room" columnName="free"/>
+    </measure>
+    <measure id="free" order="3" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="free"/>
+      <measureMapping columnObjectName="room" columnName="free"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+    
+  </shapes>
+</layout>
+</Calculation:scenario>

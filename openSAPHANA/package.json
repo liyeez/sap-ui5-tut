@@ -1,0 +1,46 @@
+{
+    "name": "openSAPHANA",
+    "version": "1.0.0",
+    "description": "A simple CAP project.",
+    "repository": "<Add your repository here>",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "@sap/cds": "^4",
+        "express": "^4",
+        "@sap/hana-client": "^2",
+        "@sap/cds-mtx": "^1",
+        "@sap/hdi-deploy": "^4",
+        "@sap/instance-manager": "^2",
+        "passport": "^0"
+    },
+    "devDependencies": {
+        "sqlite3": "^5.0.2"
+    },
+    "scripts": {
+        "start": "cds run"
+    },
+    "cds": {
+        "requires": {
+            "db": {
+                "kind": "hana",
+                "multiTenant": true,
+                "vcap": {
+                    "label": "service-manager"
+                }
+            }
+        },
+        "hana": {
+            "deploy-format": "hdbcds"
+        },
+        "mtx": {
+            "element-prefix": "Z_",
+            "namespace-blacklist": [
+                "com.sap.",
+                "sap."
+            ],
+            "entity-whitelist": [],
+            "service-whitelist": []
+        }
+    }
+}
