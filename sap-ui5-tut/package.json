@@ -1,0 +1,23 @@
+{
+  "name": "sap-ui5-tut",
+  "version": "1.0.0",
+  "description": "1. To start web server: python3 -m http.server at /webapp directory",
+  "main": "./webapp/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liyeez/sap-ui5-tut.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liyeez/sap-ui5-tut/issues"
+  },
+  "homepage": "https://github.com/liyeez/sap-ui5-tut#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {}
+}

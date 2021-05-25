@@ -1,0 +1,19 @@
+<mvc.View
+    controllerName="sap.btp.sapui5.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        title="{i18n>DetailTitle}"
+        showNavButton="true"
+        navButtonPress="handleNavButtonPress"
+    >
+        <VBox>
+            <Text text="{ProductName}"/>
+            <Text text="{UnitPrice}"/>
+            <Text text="{QuantityPerUnit}"/>
+            <Text text="{UnitsInStock}"/>
+        </VBox>
+    </Page>
+</mvc.View>
